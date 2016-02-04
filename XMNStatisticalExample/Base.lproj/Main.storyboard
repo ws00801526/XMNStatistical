@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rwY-OW-Jjd">
+                                <rect key="frame" x="267.5" y="100" width="65" height="30"/>
+                                <state key="normal" title="addEvent"/>
+                                <connections>
+                                    <action selector="addEvent" destination="BYZ-38-t0r" eventType="touchUpInside" id="BwG-EW-5SX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5A-ay-k4k">
+                                <rect key="frame" x="241" y="150" width="118" height="30"/>
+                                <state key="normal" title="Add Param Event"/>
+                                <connections>
+                                    <action selector="addParamEvent" destination="BYZ-38-t0r" eventType="touchUpInside" id="F5k-am-43H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4g-Ec-eoL">
+                                <rect key="frame" x="265.5" y="200" width="69" height="30"/>
+                                <state key="normal" title="show logs"/>
+                                <connections>
+                                    <action selector="showEvents" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qqz-bJ-hAw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9LV-1X-urS">
+                                <rect key="frame" x="245" y="298" width="110" height="30"/>
+                                <state key="normal" title="insert exception"/>
+                                <connections>
+                                    <action selector="insertException" destination="BYZ-38-t0r" eventType="touchUpInside" id="cax-Fe-vPf"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="A1z-zN-Hd5">
+                                <rect key="frame" x="179" y="250" width="242" height="29"/>
+                                <segments>
+                                    <segment title="events"/>
+                                    <segment title="activities"/>
+                                    <segment title="exceptions"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NyS-N3-oEX">
+                                <rect key="frame" x="260" y="348" width="80" height="30"/>
+                                <state key="normal" title="upload logs"/>
+                                <connections>
+                                    <action selector="uploadLogs" destination="BYZ-38-t0r" eventType="touchUpInside" id="auz-h2-Mnc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="A1z-zN-Hd5" firstAttribute="top" secondItem="T4g-Ec-eoL" secondAttribute="bottom" constant="20" id="DlA-e3-Ox7"/>
+                            <constraint firstItem="NyS-N3-oEX" firstAttribute="top" secondItem="9LV-1X-urS" secondAttribute="bottom" constant="20" id="H6Y-2W-3rz"/>
+                            <constraint firstItem="9LV-1X-urS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LhA-7N-VCn"/>
+                            <constraint firstItem="T4g-Ec-eoL" firstAttribute="top" secondItem="y5A-ay-k4k" secondAttribute="bottom" constant="20" id="OEh-vE-mzL"/>
+                            <constraint firstItem="9LV-1X-urS" firstAttribute="top" secondItem="A1z-zN-Hd5" secondAttribute="bottom" constant="20" id="OH5-l7-ehU"/>
+                            <constraint firstItem="T4g-Ec-eoL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pjj-gE-R3T"/>
+                            <constraint firstItem="NyS-N3-oEX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WV3-eC-IiV"/>
+                            <constraint firstItem="y5A-ay-k4k" firstAttribute="top" secondItem="rwY-OW-Jjd" secondAttribute="bottom" constant="20" id="Y7f-5E-jp9"/>
+                            <constraint firstItem="A1z-zN-Hd5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g1L-cS-72Q"/>
+                            <constraint firstItem="rwY-OW-Jjd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="kkf-Ku-LTu"/>
+                            <constraint firstItem="rwY-OW-Jjd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qZc-w1-NGB"/>
+                            <constraint firstItem="y5A-ay-k4k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wCM-I0-yjI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="sengmentControl" destination="A1z-zN-Hd5" id="6dA-hJ-NnY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
