@@ -1,0 +1,2 @@
+# XMNStatistical
+统计用户事件类库,将记录的event事件先写入sqlite数据库内
